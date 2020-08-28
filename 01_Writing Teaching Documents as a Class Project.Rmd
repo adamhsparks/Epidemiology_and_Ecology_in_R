@@ -1,0 +1,356 @@
+---
+title: "Writing Teaching Documents as a Class Project"
+author:
+  - name: Karen A. Garrett
+    institute: [KSUPP]
+  - name: Paul D. Esker
+    institute: [KSUPP, WISC]
+  - name: Adam H. Sparks
+    institute: [KSUPP]
+  - name: Lawrence C. Scharmann
+    institute: [KSUSE]
+institute:
+  - KSUPP: Department of Plant Pathology, Kansas State University, Manhattan, KS, USA
+  - KSUSE: Department of Secondary Education, Kansas State University, Manhattan, KS, USA
+  - WISC: Current address of P.D. Esker -- Department of Plant Pathology, University of Wisconsin, Madison, WI, USA
+output: 
+  html_document:
+    pandoc_args:
+    - '--lua-filter=scholarly-metadata.lua'
+    - '--lua-filter=author-info-blocks.lua'
+bibliography: references.bib
+csl: american-phytopathological-society.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Development of teaching documents can be a valuable activity in a graduate course, providing students with a tangible goal for organizing their understanding of course topics as well as a concrete professional accomplishment.
+Here we describe how we incorporated development of documents for submission to The Plant Health Instructor (PHI) in a graduate course in plant pathology.
+PHI is a peer-reviewed, online journal of the American Phytopathological Society that publishes teaching publications aimed at students as well as teaching articles and notes for instructor communication.
+Other scientific societies also publish teaching journals that could be considered for submission of class projects in other fields.
+Some of the features of our course plan were specific to the course topic, the ecology and epidemiology of plant pathogens, but most of the considerations are applicable to any course in which students develop writing projects.
+
+We had two broad goals for our course, the first being student learning of the course topics: epidemiology and ecology, including applications of mathematical and statistical tools and practice writing and working in teams.
+Our second goal was the production of an educational tool for use by students outside our class: documents for PHI that present topics in ecology and epidemiology for other classes and for self-study [@Esker2007; @Esker2008; @Sparks2008; @Sparks2008a].
+Our target audience included readers interested in epidemiology and ecology and those interested in applications of the R programming environment [@Garrett2007].
+R is a free, open source programming environment for modeling, statistical analysis, graphics, and other applications, with a large community of developers, contributors, and users around the world [@R2007]; its availability to anyone with internet access through the R Project website (<http://www.r-project.org>) enhanced the global utility of our teaching documents.
+In the development of our documents, we aimed for readers at the advanced undergraduate or graduate level who have had some previous coursework in plant pathology and mathematics or statistics.
+
+We developed our documents in the following class structure.
+The two-credit course met twice a week, once for a 1 hour lecture and once for a 1.5 hour workshop that included activities such as (a) exercises using R related to the documents, (b) meetings among authors of each document, and (c) presentations to all students by document authors.
+Three people participated in teaching the class, a faculty member, a postdoctoral fellow, and an advanced graduate student.
+Each document had about half the students in the class (six or seven) as authors.
+Each document had four types of participants: (a) student authors who contributed text and ideas for development of the document, (b) students who were not authors but who contributed comments for improvement of the documents, (c) a teacher as a lead writer, and (d) other teachers contributing text and comments.
+The outline of activities and timing is given in Table 1.
+
+For the development of each teaching document, each student author began by writing an individual section, though in some cases these sections were later merged.
+To start, each student author was asked to identify three journal articles that illustrated concepts relevant to the document topics.
+In discussions with other authors of their document, each student author then selected a single paper that meshed well with other students’ subtopics and then developed his or her section based on that journal article and other relevant references.
+The lead writer assembled the students’ contributions into a single document and then asked students to fill in any missing information the lead writer identified.
+All students provided feedback on the draft as it developed.
+
+## Educational tools employed
+
+*Project-based learning.* Students actively learned about the topics by preparing documents that explained the topics [@Handelsman2007].
+Students researched, constructed meaning from scientific publications, and collaborated with peers to produce instructionally based documents [@Uyeda2002].
+
+*Cooperative group work.* Students worked in teams to construct and produce the teaching documents [@Lin2006].
+
+Scoring rubrics. We have developed a scoring rubric (Table 2) for individual student contributions to future teaching documents based on common strengths and weaknesses of students in our course [@Bednarski2003; @Handelsman2007].
+
+*Authentic assessment.* Students prepared documents for publication in a peer-reviewed on-line journal, a direct professional experience [@Scharmann2004].
+Students benefit from experience writing, as skill in writing is one of the many expectations of graduate students in their future careers.
+The students’ work will be available indefinitely to help other future students and teachers as they address the same topics.
+
+## Lessons learned
+
+*Number of authors.* 
+Each of our documents had six or seven students as authors.
+Having a smaller number of authors would allow for clearer topic ‘ownership’ within a document.
+A smaller number would also facilitate more direct interactions among student authors.
+Based on our experience, three to four students might be an optimal group size. 
+This is consistent with the literature on cooperative learning [@Lin2006].
+
+*The number of documents a class prepares.*
+We wrote four documents during the course of a semester, which required quick pacing.
+The advantage of this was that each student got experience writing two documents on different topics and with different coauthors.
+The disadvantage was that there was less time to reflect on how best to revise the documents and for interactions among students.
+Development of the group documents was a substantial time commitment for the teachers, even with three teachers working on the same course.
+If a single teacher decided to develop teaching documents with students as a teaching tool, it might only be practical to produce one or two documents.
+
+*Student interactions.*
+Interactions among students tended to be limited to those that were explicitly assigned as part of the class work.
+More student interaction might be fostered by designating times for the groups to meet without a teacher in addition to meetings with the teachers.
+If more time were available, weekly meetings among the authors of a document would have allowed for discussion of common problems and more team-based approaches to synthesizing material.
+
+*The process of revision.*
+Development of student contributions to documents required the lead writer to specify what revisions were needed in many cases.
+If students met without any teachers, they could be asked to revise the document and provide their revision to the lead writer.
+Quite a bit of revision was still necessary after the class was over, in part because the quick pacing necessary to complete all the documents left less time for revision.
+Planning for student participation in at least two iterative revisions of each document would give students a more complete understanding of the writing process.
+
+*Formatting.*
+While students were asked to follow the formatting of the journal for which we were writing, other formatting details came up later.
+It would have been more efficient if we had developed a complete standard formatting at the outset.
+Teaching journals such as PHI provide instructions to authors, but we also developed other formatting specific to our particular documents that helped maintain consistency within and among documents.
+
+*Students from different disciplines.*
+For our topics, we had students representing two different broad areas, biology and quantitative fields (mathematics and statistics), but the biologists represented over 70% of the students.
+Since many of the topics we addressed had a strong quantitative component, it might have been useful to have an equal number of students from each discipline so that they could work directly in pairs.
+For other projects that involve more than one discipline, this might not always be possible, so adjustments may need to be made.
+For example, a student from a discipline that is not as well represented in the class might have a smaller role in two documents rather than a larger role in a single document.
+
+*Development of student contributions.*
+Many students would have benefited from more discussion prior to beginning selection of papers about how to select papers that illustrate concepts and how to critically evaluate papers.
+The process of developing contributions to a teaching document might be improved by asking students to select candidate papers further in advance so that all students in the class could read and discuss them.
+Then each student author’s presentation would focus on the selected paper and on what points from the paper should be included in the document.
+Participation of other students in the discussion of papers and material for inclusion in documents might be enhanced by assigning other roles than simply that of presenter.
+For example, another student could be assigned the role of discussant.
+
+## Conclusions
+
+These are our initial experiences with writing teaching documents as a class project.
+Students generally found it stimulating to prepare these documents; several students participated in the 2006 class specifically because they were interested in the opportunity to write documents for publication.
+Garrett plans to include this activity when the course in which the documents were developed, Ecology and Epidemiology of Plant Pathogens, is offered again.
+Since PHI allows authors to revise their teaching publications, students in the future class will study the publications from the 2006 class and, as a class assignment, develop recommendations for revision.
+Students will also develop new teaching documents in the ‘Ecology and epidemiology in R’ series that build on those developed by the 2006 class.
+We recommend this activity for inclusion in other courses, both to provide students with a valuable experience and to help disseminate course materials to a global audience.
+
+## Acknowledgments
+
+We thank P. Garfinkel, K. Stevenson, PHI reviewers, and members of the 2006 class in Ecology and Epidemiology of Plant Pathogens at KSU for helpful comments on this work.
+It is also a pleasure to acknowledge support by the U.S. National Science Foundation under Grants DEB-0516046, EF-0525712 (as part of the joint NSF-NIH Ecology of Infectious Disease program) and DBI-0630726, by the U.S. Agency for International Development for the SANREM CRSP under terms of Cooperative Agreement Award No. EPP-A-00-04-00013-00 to the OIRD at Virginia Tech and for the IPM CRSP.
+This is Kansas State Experiment Station Contribution No. 08-101-J.
+
+## References
+
+<div id="refs"></div>
+
+**Table 1.** Course outline used for construction of four teaching documents during a semester with class meetings during thirteen weeks (not including holidays). Most weeks there was a lecture (A) and a workshop (B). Work outside of the class meetings is indicated in parentheses. Numbers indicate the steps of document construction as outlined.
+
+1. Two general lectures on the document topic are presented as background
+2. Student authors do a survey of literature on the topic selected and discuss what they would like to contribute with other members of the group so that the group can decide on how to make the contributions complementary
+3. Student authors give presentations with more detail about their ideas for material to include in the document
+4. Student authors turn in written contributions to the lead writer for their document
+5. The lead writer synthesizes materials and distributes the first complete draft of the document to the whole class
+6. The authors provide comments and revised materials
+7. All students provide written comments and discuss the document draft in class
+8. The authors construct a quiz over the materials in the document
+9. All students take the quiz
+10. The lead writer evaluates the quiz results and revises the document accordingly, including the addition of a revised quiz to the document 
+
+<table width="600" cellspacing="0" cellpadding="3" border="1">
+<tbody>
+<tr>
+<th scope="col">Week</th>
+<th scope="col">General<sup>1</sup></th>
+<th scope="col">Doc 1</th>
+<th scope="col">Doc 2</th>
+<th scope="col">Doc 3</th>
+<th scope="col">Doc 4</th></tr>
+<tr>
+<td valign="top">1</td>
+<td valign="top">A: Introduction<br><br>B: R practice</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td></tr>
+<tr>
+<td valign="top">2</td>
+<td valign="top">B: R practice</td>
+<td valign="top">A: 1</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td></tr>
+<tr>
+<td valign="top">3</td>
+<td valign="top">B: R practice</td>
+<td valign="top">A: 1</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td></tr>
+<tr>
+<td valign="top">4</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">B: 2</td>
+<td valign="top">A: 1</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td></tr>
+<tr>
+<td valign="top">5</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">B: 3 (4)</td>
+<td valign="top">A: 1</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td></tr>
+<tr>
+<td valign="top">6</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">(5, 6)</td>
+<td valign="top">B: 2</td>
+<td valign="top">A: 1</td>
+<td valign="top">&nbsp;</td></tr>
+<tr>
+<td valign="top">7</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">B: 7, 8</td>
+<td valign="top">B: 3 (4)</td>
+<td valign="top">A: 1</td>
+<td valign="top">&nbsp;</td></tr>
+<tr>
+<td valign="top">8</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">B: 9</td>
+<td valign="top">(5, 6)</td>
+<td valign="top">B: 2</td>
+<td valign="top">A: 1</td></tr>
+<tr>
+<td valign="top">9</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">(10)</td>
+<td valign="top">B: 7, 8</td>
+<td valign="top">B: 3 (4)</td>
+<td valign="top">A: 1</td></tr>
+<tr>
+<td valign="top">10</td>
+<td valign="top">A: Other topics</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">B: 9</td>
+<td valign="top">(5, 6)</td>
+<td valign="top">B: 2</td></tr>
+<tr>
+<td valign="top">11</td>
+<td valign="top">A: Other topics</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">(10)</td>
+<td valign="top">B: 7,8</td>
+<td valign="top">B: 3 (4)</td></tr>
+<tr>
+<td valign="top">12</td>
+<td valign="top">A: Other topics</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">B: 9</td>
+<td valign="top">(5, 6)</td></tr>
+<tr>
+<td valign="top">13</td>
+<td valign="top">A: Other topics</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">(10)</td>
+<td valign="top">B: 7,8,9</td></tr>
+<tr>
+<td valign="top">Finals</td>
+<td valign="top">Group comments on complete set of documents</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">(10)</td>
+</tr>
+</tbody>
+</table>
+
+**Table 2.** Rubric for an individual student author’s contributions to a document</p>
+<table width="600" cellspacing="0" cellpadding="3" border="1">
+<tbody>
+<tr>
+<th scope="col">Category</th>
+<th scope="col">3</th>
+<th scope="col">2</th>
+<th scope="col">1</th>
+<th scope="col">0</th></tr>
+<tr>
+<td valign="top">Selection of published paper for discussion in document</td>
+<td valign="top">Selected a paper that provided a clear illustration of important concepts and articulated well with other topics</td>
+<td valign="top">Selected a paper that provides a clear illustration of important concepts but did not articulate well with other topics</td>
+<td valign="top">Selected a paper that was related to topic, but did not provide a clear illustration</td>
+<td valign="top">A paper had to be supplied by instructor</td></tr>
+<tr>
+<td valign="top">Leading discussion of selected paper</td>
+<td valign="top">Stayed within allotted time, clearly explained the topic, and made clear the important points to include in the document</td>
+<td valign="top">Stayed within allotted time, clearly explained the topic, but did not make clear the important points to include in the document</td>
+<td valign="top">Stayed within allotted time, but the explanation of the topic lacked clarity</td>
+<td valign="top">Was unprepared to present the topic</td></tr>
+<tr>
+<td valign="top">Construction of initial text (exclusive of R program)</td>
+<td valign="top">Met submission deadlines; written material provided an intellectual synthesis of the selected paper, as well as a synthesis of why the material is relevant for the document topic</td>
+<td valign="top">Met submission deadlines; written material did describe the case study, but lacked the depth for a complete synthesis of the document topic</td>
+<td valign="top">Information was received after multiple requests; written material provided an intellectual synthesis of the selected paper, as well as a synthesis of why the material is relevant for the document topic</td>
+<td valign="top">Information was received after multiple requests; written material did describe the case study, but lacked the depth for a complete synthesis of the document topic </td></tr>
+<tr>
+<td valign="top">Construction of initial R program</td>
+<td valign="top">Attempted to write R code that matched the desired output, irrespective of whether it worked, and discussed code with lead writer</td>
+<td valign="top">Discussed R code with lead writer, but did not present R code, or presented R code that did not match the example</td>
+<td valign="top">Developed rough idea of example, but made no mention of R code, nor discussed R code with lead writer</td>
+<td valign="top">Did not provide an example or R code</td></tr>
+<tr>
+<td valign="top">Revision of student section based on class feedback </td>
+<td valign="top">Student thoroughly addressed all comments in a timely manner</td>
+<td valign="top">Student addressed major comments in a timely manner, but did not address finer details</td>
+<td valign="top">Student did not address the major comments or did not provide revisions on time</td>
+<td valign="top">Student did not address any comments</td></tr>
+<tr>
+<td valign="top">Comments on other parts of document</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">Provided a list of five strengths and five weaknesses of the document that contributed to improving the document</td>
+<td valign="top">Provided a list of comments that were relevant to improving the document</td>
+<td valign="top">Did not provide relevant feedback</td></tr>
+<tr>
+<td valign="top">Use of appropriate formats</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">Appropriate formats were followed consistently</td>
+<td valign="top">Appropriate formats were followed to some extent, but not consistently</td>
+<td valign="top">Appropriate formats were generally not followed</td>
+</tr>
+</tbody>
+</table>
+
+Rubric for the contributions of an individual student who is not an author
+
+<table width="600" cellspacing="0" cellpadding="1" border="1">
+<tbody>
+<tr>
+<th scope="col">Category</th>
+<th scope="col">2</th>
+<th scope="col">1</th>
+<th scope="col">0</th></tr>
+<tr>
+<td valign="top">Comments on a document as a non-author</td>
+<td valign="top">Provided a list of five strengths and five weaknesses of the document that contributed to improving the document</td>
+<td valign="top">Provided a list of comments that were relevant to improving the document</td>
+<td valign="top">Did not provide feedback</td></tr></tbody></table>
+
+**Appendix 1.** Obtaining feedback: survey of student perceptions
+
+The following questions could be included in a survey of student perceptions.
+
+Statements that use a 1-5 scale for responses, 1=strongly disagree, 2=disagree, 3=neutral, 4=agree, 5=strongly agree:
+
+Perceptions regarding preparation of a document for The Plant Health Instructor (PHI)
+
+  * It will be helpful for my career to be an author of PHI papers.
+  * Preparing real documents for publication led to my learning the material better than I would have otherwise.
+  * I felt comfortable tackling the topics for the documents with my previous background and the preparation provided in this class.
+  * In the future, I would use these documents for teaching these subjects or recommend them to other teachers.
+  * I have learned more than I would have with a traditional lecture and exam format.
+  * I would have preferred a traditional lecture and exam format.
+  * If this course is organized around writing teaching documents in the future, I would recommend it to other students. 
+
+Perceptions concerning working in groups for preparation of the documents
+
+  * I had experience working in a team to produce a publication before this class.
+  * Presenting an in-class presentation on my case study helped me in development of my written material for inclusion in the document.
+  * I learned more about the course topics as a result of working in a group.
+  * I picked up skills for working in groups that I will use in other contexts.
+  * In the future, I would use group activities in my own teaching or recommend them to other teachers.
+  * I felt that my group interacted sufficiently to create as high quality a document as I had anticipated.
+  * The time I put into these documents was a good investment. 
+
+Reflective essay
+
+  * What did you bring to the table in this course?
+  * How well did you learn?
+  * What worked about the process?
+  * What can be improved (and how would it be improved)? 
