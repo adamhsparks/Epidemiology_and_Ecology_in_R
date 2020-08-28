@@ -26,8 +26,6 @@ csl: american-phytopathological-society.csl
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Garrett, K. A., Esker, P. D., Sparks, A.H., and L.C. Scharmann. 2007. Writing teaching documents as a class project. *The Plant Health Instructor.*
-
 Development of teaching documents can be a valuable activity in a graduate course, providing students with a tangible goal for organizing their understanding of course topics as well as a concrete professional accomplishment.
 Here we describe how we incorporated development of documents for submission to The Plant Health Instructor (PHI) in a graduate course in plant pathology.
 PHI is a peer-reviewed, online journal of the American Phytopathological Society that publishes teaching publications aimed at students as well as teaching articles and notes for instructor communication.
